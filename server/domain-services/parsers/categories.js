@@ -1,24 +1,24 @@
 const getCategories = (filters) => {
-  const currentCategory = filters.find(function (item) {
-    if (item.id === "category") {
-      return item;
-    }
-  });
+    const currentCategory = filters.find(function (item) {
+        if (item.id === "category") {
+            return item;
+        }
+    });
 
-  if (!currentCategory) return [];
+    if (!currentCategory) return [];
 
-  const { values } = currentCategory;
+    const { values } = currentCategory;
 
-  if (!values.length) return [];
+    if (!values.length) return [];
 
-  const firstItem = values[0];
-  const { path_from_root: categories } = firstItem;
+    const firstItem = values[0];
+    const { path_from_root: categories } = firstItem;
 
-  return categories.map(function (item) {
-    return item.name;
-  });
+    return categories.map(function (item) {
+        return item.name;
+    });
 };
 
 export default {
-  getCategories,
+    getCategories,
 };

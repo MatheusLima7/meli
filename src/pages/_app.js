@@ -8,29 +8,29 @@ import Layout from "../components/_app/Layout";
 import "../styles/global.scss";
 
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {};
+    static async getInitialProps({ Component, ctx }) {
+        let pageProps = {};
 
-    // Retreiving each page's props
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps({ ctx });
+        // Retreiving each page's props
+        if (Component.getInitialProps) {
+            pageProps = await Component.getInitialProps({ ctx });
+        }
+
+        return {
+            pageProps,
+        };
     }
 
-    return {
-      pageProps,
-    };
-  }
-
-  render() {
-    const { Component, pageProps, store } = this.props;
-    return (
-      <Provider store={store}>
-        <Layout {...pageProps}>
-          <Component {...pageProps} />
-        </Layout>
-      </Provider>
-    );
-  }
+    render() {
+        const { Component, pageProps, store } = this.props;
+        return (
+            <Provider store={store}>
+                <Layout {...pageProps}>
+                    <Component {...pageProps} />
+                </Layout>
+            </Provider>
+        );
+    }
 }
 
 export default withRedux(createStore)(MyApp);

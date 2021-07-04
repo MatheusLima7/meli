@@ -2,66 +2,66 @@
 @import "../../styles/mixins";
 
 :export {
-  color-white: $color-white;
-  text-color-gray: $text-color-gray;
-  text-color-gray-secondary: $text-color-gray-secondary;
-  color-border-items: $color-border-items;
-  background-input-hover: $background-input-hover;
-  background-button: $background-button;
-  background-button-hover: $background-button-hover;
+    color-white: $color-white;
+    text-color-gray: $text-color-gray;
+    text-color-gray-secondary: $text-color-gray-secondary;
+    color-border-items: $color-border-items;
+    background-input-hover: $background-input-hover;
+    background-button: $background-button;
+    background-button-hover: $background-button-hover;
 }
 
 .productDetail {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: $color-white;
-  padding: 32px;
-  @include mobile() {
-    flex-direction: column;
-  }
-  .info {
-    width: 100%;
-    max-width: 680px;
-    img {
-      width: 100%;
-    }
-    .titleProduct {
-      margin-top: 70px;
-      font-size: 28px;
-      margin-bottom: 32px;
-      @include mobile() {
-        margin-top: 20px;
-      }
-    }
-  }
-  .purchase {
-    margin-left: 32px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $color-white;
+    padding: 32px;
     @include mobile() {
-      margin: 30px 0;
+        flex-direction: column;
     }
+    .info {
+        width: 100%;
+        max-width: 680px;
+        img {
+            width: 100%;
+        }
+        .titleProduct {
+            margin-top: 70px;
+            font-size: 28px;
+            margin-bottom: 32px;
+            @include mobile() {
+                margin-top: 20px;
+            }
+        }
+    }
+    .purchase {
+        margin-left: 32px;
 
-    .title {
-      font-size: 24px;
-      color: $text-color-gray;
-    }
-    .price {
-      font-size: 46px;
-    }
-    button {
-      cursor: pointer;
-      display: block;
-      margin-top: 32px;
-      width: 100%;
-      line-height: 40px;
-      border-radius: 4px;
-      background: $background-button;
-      color: $color-white;
+        @include mobile() {
+            margin: 30px 0;
+        }
 
-      &:hover {
-        background: $background-button-hover;
-      }
+        .title {
+            font-size: 24px;
+            color: $text-color-gray;
+        }
+        .price {
+            font-size: 46px;
+        }
+        button {
+            cursor: pointer;
+            display: block;
+            margin-top: 32px;
+            width: 100%;
+            line-height: 40px;
+            border-radius: 4px;
+            background: $background-button;
+            color: $color-white;
+
+            &:hover {
+                background: $background-button-hover;
+            }
+        }
     }
-  }
 }

@@ -2,14 +2,14 @@
 @import "../../styles/mixins";
 
 :export {
-  text-color-gray: $text-color-gray;
+    text-color-gray: $text-color-gray;
 }
 
 .price {
-  margin-top: 16px;
-  margin-bottom: 32px;
-  color: $text-color-gray;
-  @include mobileList() {
-    margin-bottom: 10px;
-  }
+    margin-top: 16px;
+    margin-bottom: 32px;
+    color: $text-color-gray;
+    @include mobileList() {
+        margin-bottom: 10px;
+    }
 }

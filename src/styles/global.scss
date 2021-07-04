@@ -2,56 +2,56 @@
 @import "./mixins.scss";
 
 * {
-  padding: 0;
-  margin: 0;
-  vertical-align: baseline;
-  list-style: none;
-  border: 0;
-  outline: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    outline: none;
 }
 
 body {
-  background: $background;
-  font-family: "Open Sans", sans-serif;
+    background: $background;
+    font-family: "Open Sans", sans-serif;
 
-  .messages {
-    display: block;
-    margin: 16px 0;
-  }
-  .center {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .content {
-    width: 990px;
-    margin: 0 auto;
-    @include tablet() {
-      width: 90%;
-      max-width: 100%;
+    .messages {
+        display: block;
+        margin: 16px 0;
     }
-    @include mobile() {
-      width: 90%;
-      max-width: 100%;
+    .center {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-  }
-  ul,
-  li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+    .content {
+        width: 990px;
+        margin: 0 auto;
+        @include tablet() {
+            width: 90%;
+            max-width: 100%;
+        }
+        @include mobile() {
+            width: 90%;
+            max-width: 100%;
+        }
+    }
+    ul,
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-  h2 {
-    font-size: 24px;
-  }
+    h2 {
+        font-size: 24px;
+    }
 
-  .size24 {
-    font-size: 24px;
-  }
+    .size24 {
+        font-size: 24px;
+    }
 
-  .size46 {
-    font-size: 46px;
-  }
+    .size46 {
+        font-size: 46px;
+    }
 }

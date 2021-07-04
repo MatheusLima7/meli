@@ -2,10 +2,10 @@
 import { searchProducts } from "../../../server/domain-services/products";
 
 export default (req, res) => {
-  const {
-    query: { q = "" },
-  } = req;
-  const text = q;
+    const {
+        query: { q = "" },
+    } = req;
+    const text = q;
 
-  searchProducts(text).then((response) => res.json(response));
+    searchProducts(text).then((response) => res.json(response));
 };

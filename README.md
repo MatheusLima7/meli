@@ -2,7 +2,7 @@
 
 <b>Informações essenciais sobre o Projeto.</b> 🤓
 
-- 🚀 Versão 1.0.0!
+-   🚀 Versão 1.0.0!
 
 ## Para rodar em desenvolvimento
 
@@ -16,7 +16,7 @@
 
 ## Front-end 🎯
 
-- [Detalhamento do Projeto](src/STRUCTURE_PROJECT_FRONT_END.md)
+-   [Detalhamento do Projeto](src/STRUCTURE_PROJECT_FRONT_END.md)
 
 <b>Client:</b>
 
@@ -24,7 +24,7 @@
 
 ## Back-end 🎯
 
-- [Detalhamento do Projeto](src/STRUCTURE_PROJECT_BACK_END.md)
+-   [Detalhamento do Projeto](src/STRUCTURE_PROJECT_BACK_END.md)
 
 <b>Server:</b>
 
