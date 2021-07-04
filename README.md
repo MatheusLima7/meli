@@ -14,10 +14,20 @@
 
 > `yarn start`
 
-## Front-end
+## Front-end 🎯
 
 - [Detalhamento do Projeto](src/STRUCTURE_PROJECT_FRONT_END.md)
 
-## Back-end
+<b>Client:</b>
+
+> `http://localhost:3000/`
+
+## Back-end 🎯
 
 - [Detalhamento do Projeto](src/STRUCTURE_PROJECT_BACK_END.md)
+
+<b>Server:</b>
+
+> `http://localhost:3000/api/items?q=celular`
+
+> `http://localhost:3000/api/items/MLA824974106`
