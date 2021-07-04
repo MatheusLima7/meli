@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+:export {
+  background-search-bar: $background-search-bar;
+}
+
+.headerContent {
+  background: $background-search-bar;
+  .searchBar {
+    display: flex;
+    flex: 1;
+    padding: 10px 0;
+
+    .image {
+      cursor: pointer;
+      max-width: 40px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

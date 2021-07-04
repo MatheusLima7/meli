@@ -1,0 +1,78 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+:export {
+  color-white: $color-white;
+  text-color-gray: $text-color-gray;
+  text-color-gray-secondary: $text-color-gray-secondary;
+  color-border-items: $color-border-items;
+  background-input-hover: $background-input-hover;
+}
+
+.product {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $color-white;
+  cursor: pointer;
+
+  &:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  &:hover {
+    background: $background-input-hover;
+  }
+
+  .contentProduct {
+    padding: 16px 0;
+    display: flex;
+    flex: 1;
+    border-bottom: solid 1px $color-border-items;
+    @include mobileList() {
+      flex-direction: column;
+    }
+    img {
+      width: 100%;
+      max-width: 120px;
+      border-radius: 4px;
+      @media (min-width: 450px) AND (max-width: 630px) {
+        max-width: 30%;
+        margin: 20px auto;
+      }
+      @media (min-width: 300px) AND (max-width: 449px) {
+        max-width: 50%;
+        margin: 20px auto;
+      }
+    }
+    .description {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 40px;
+      margin-left: 16px;
+      @include mobileList() {
+        flex-direction: column;
+      }
+      .detail {
+        margin-right: 120px;
+        @include mobileList() {
+          margin-right: 0;
+        }
+        .info {
+          font-size: 18px;
+          color: $text-color-gray;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

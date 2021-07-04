@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+:export {
+  text-color-gray: $text-color-gray;
+  text-color-gray-secondary: $text-color-gray-secondary;
+}
+
+.breadcrumb {
+  padding: 16px 0;
+  .text {
+    color: $text-color-gray;
+    font-size: 14px;
+  }
+}
