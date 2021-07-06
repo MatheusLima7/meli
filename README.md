@@ -12,7 +12,7 @@
 
 > `yarn`
 
-> `yarn start`
+> `yarn dev`
 
 ## Front-end 🎯
 
