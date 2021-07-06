@@ -14,6 +14,10 @@
 
 > `yarn dev`
 
+## Para rodar em produção 
+
+> `yarn build`
+
 ## Front-end 🎯
 
 -   [Detalhamento do Projeto](src/STRUCTURE_PROJECT_FRONT_END.md)
